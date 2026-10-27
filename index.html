@@ -7,6 +7,58 @@
   <meta name="description" content="Rica Papa: papas y comida rica para compartir. Revisa nuestro menú y contáctanos.">
   <title>Rica Papa | Comida rica para compartir</title>
   <style>
+    /* RICA PAPA - ESTILO OSCURO */
+:root {
+  --bg: #101010;
+  --surface: #1b1b1b;
+  --text: #ffffff;
+  --muted: #cccccc;
+  --yellow: #FFD43B;
+  --blue: #1677D2;
+  --red: #E53935;
+  --orange: #FF851B;
+}
+
+/* Fondo y textos */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Secciones y tarjetas */
+section,
+.card,
+.product-card {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: var(--yellow);
+}
+
+/* Enlaces */
+a {
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* Botones de compra */
+.buy-button {
+  background-color: var(--red);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Detalles de color */
+.brand-mark {
+  color: var(--yellow);
+}
     :root {
       --red: #e43d2f;
       --red-dark: #b92720;
