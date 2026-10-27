@@ -6,7 +6,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Rica Papa: papas y comida rica para compartir. Revisa nuestro menú y contáctanos.">
   <title>Rica Papa | Comida rica para compartir</title>
-  
+
+/* RICA PAPA - ESTILO BASADO EN EL MENU */
+:root {
+  --bg: #080e65;
+  --surface: #10164f;
+  --surface-2: #171d62;
+  --text: #ffffff;
+  --muted: #dedfff;
+  --yellow: #ffd52e;
+  --blue: #1677d2;
+  --red: #f20d19;
+  --red-dark: #c90012;
+  --orange: #f47b18;
+  --cream: #080e65;
+  --ink: #ffffff;
+  --white: #10164f;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: rgba(8, 14, 101, .97);
+  border-bottom: 2px solid var(--yellow);
+}
+
+.nav-links a:hover {
+  color: var(--yellow);
+}
+
+section {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.section-head h2,
+.about h2,
+.menu-content h3 {
+  color: var(--yellow);
+}
+
+.menu-card,
+.contact-card {
+  background: var(--surface);
+  color: white;
+  border: 2px solid var(--yellow);
+}
+
+.menu-image {
+  background: #171d62;
+}
+
+.menu-card:nth-child(2) .menu-image,
+.menu-card:nth-child(3) .menu-image {
+  background: #171d62;
+}
+
+.menu-content p,
+.section-head p,
+.about p {
+  color: var(--muted);
+}
+
+.price {
+  color: var(--orange);
+}
+
+.tag {
+  background: var(--yellow);
+  color: #080808;
+}
+
+.about {
+  background: #10164f;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+
+.feature {
+  background: #171d62;
+  color: white;
+  border: 1px solid var(--yellow);
+}
+
+.contact-icon {
+  background: var(--yellow);
+  color: #080808;
+}
+
+.contact-card.highlight {
+  background: #10164f;
+  color: white;
+  border-color: var(--yellow);
+}
+
+footer {
+  background: #05083b;
+  color: white;
+  border-top: 2px solid var(--yellow);
+}
+
+.footer-inner strong {
+  color: var(--yellow);
+}
+
+.eyebrow,
+.edit-notice {
+  background: #171d62;
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+}
+
+.food-art {
+  background: linear-gradient(145deg, #171d62, #080e65);
+  border: 2px solid var(--yellow);
+}
+
+.sticker.bottom {
+  background: var(--yellow);
+  color: #080808;
+}
+
+/* Mantener visibles los botones de WhatsApp */
+.whatsapp-float {
+  background: #20bd5a;
+  color: white;
+}
+
 <style>
   :root {
     --bg: #101010;
