@@ -485,26 +485,33 @@ footer {
     grid-template-columns: 1fr;
   }
   /* Botón flotante de Instagram */
+/* Botón flotante de Instagram */
 .instagram-float {
-  position: fixed;
-  bottom: 95px;
-  right: 24px;
+  position: fixed !important;
+  bottom: 100px !important;
+  right: 24px !important;
   width: 58px;
   height: 58px;
   border-radius: 50%;
   background: linear-gradient(135deg, #833ab4, #e1306c, #f77737);
   color: white;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 99999 !important;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.3);
   text-decoration: none;
-  z-index: 1000;
   transition: transform 0.2s;
 }
 
 .instagram-float:hover {
   transform: scale(1.1);
+}
+
+.instagram-float svg {
+  display: block;
 }
   </style>
 </head>
