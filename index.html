@@ -410,6 +410,81 @@ footer {
   font-size: 18px;
   line-height: 1.7;
 }
+    
+/* Extras con fotografías */
+#promociones .extras-fotos {
+  margin-top: 65px;
+}
+
+#promociones .extras-encabezado {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#promociones .extras-encabezado h2 {
+  color: #ffd52e;
+  font-size: 32px;
+}
+
+#promociones .extras-encabezado p {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#promociones .extras-listas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+#promociones .extras-lista {
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  overflow: hidden;
+  background: #10164f;
+}
+
+#promociones .extras-lista img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+#promociones .extras-lista-texto {
+  padding: 28px;
+}
+
+#promociones .extras-lista h3 {
+  font-size: 26px;
+  color: #ffd52e;
+  margin-bottom: 12px;
+}
+
+#promociones .extras-lista span {
+  color: #ffd52e;
+  font-weight: bold;
+}
+
+#promociones .extras-lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+#promociones .extras-lista li {
+  color: white;
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 7px 0;
+}
+
+@media (max-width: 700px) {
+  #promociones .extras-listas {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 <body>
@@ -670,6 +745,51 @@ footer {
       </article>
 
     </div>
+    
+<div class="extras-fotos">
+  <div class="extras-encabezado">
+    <h2>EXTRAS DISPONIBLES</h2>
+    <p>Personaliza tu pedido con tus ingredientes favoritos.</p>
+  </div>
+
+  <div class="extras-listas">
+    <div class="extras-lista">
+      <img src="toppings.jpg" alt="Papas con toppings">
+      <div class="extras-lista-texto">
+        <h3>TOPPINGS</h3>
+        <span>Adicional: $3.000</span>
+        <ul>
+          <li>Cheddar tocino</li>
+          <li>Carne mechada</li>
+          <li>Salchicha</li>
+          <li>Chorizo</li>
+          <li>Cebolla caramelizada</li>
+          <li>Crispy Merken</li>
+          <li>Pollo crispy</li>
+          <li>Pollo salteado</li>
+          <li>Camarón</li>
+          <li>Aros de calamar</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="extras-lista">
+      <img src="salsas.jpg" alt="Variedad de salsas">
+      <div class="extras-lista-texto">
+        <h3>SALSAS</h3>
+        <ul>
+          <li>Mayonesa ajo</li>
+          <li>Mayonesa ajo cilantro</li>
+          <li>Mayonesa Merken</li>
+          <li>BBQ</li>
+          <li>Salsa rosada</li>
+          <li>Mostaza miel</li>
+          <li>Cheddar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </section>
 <!-- FIN PROMOCIONES -->
